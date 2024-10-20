@@ -1,3 +1,5 @@
+import ExperienceSection from 'components/ExperienceSection'
+import HeroSection from 'components/HeroSection'
 import LoadingOrError from 'components/LoadingOrError'
 import { Suspense, type ReactElement } from 'react'
 import { BrowserRouter } from 'react-router-dom'
@@ -12,10 +14,6 @@ export default function App(): ReactElement {
 		{ content: 'Education', href: '#item-5' },
 		{ content: 'Interests', href: '#item-6' }
 	]
-
-	const MAX_ITEMS = 6
-	// eslint-disable-next-line @typescript-eslint/no-magic-numbers
-	const test = Array.from({ length: MAX_ITEMS }, (_, index) => index + 1)
 
 	return (
 		<BrowserRouter>
@@ -35,7 +33,7 @@ export default function App(): ReactElement {
 							src={avatar}
 							alt='avatar'
 						/>
-
+						{/* SCROLL MENU */}
 						<ul
 							className='sticky top-0'
 							data-hs-scrollspy='#scrollspy-2'
@@ -54,22 +52,27 @@ export default function App(): ReactElement {
 						</ul>
 					</div>
 
+					{/* CONTENT */}
 					<div id='scrollspy-content' className='col-span-3 ml-[10rem]'>
-						<div id='scrollspy-2' className='h-screen space-y-4'>
-							{test.map(item => (
-								<div id={`item-${item}`} key={item} className='h-screen'>
-									<h3 className='text-lg font-semibold dark:text-white'>
-										{item}
-									</h3>
-									<p className='mt-1 text-sm leading-6 text-gray-600 dark:text-neutral-400'>
-										This is some placeholder content for the scrollspy page.
-										Note that as you scroll down the page, the appropriate
-										navigation link is highlighted. Its repeated throughout the
-										component example. We keep adding some more example copy
-										here to emphasize the scrolling and highlighting.
-									</p>
-								</div>
-							))}
+						<div id='scrollspy-2' className='h-screen w-[800px] space-y-4'>
+							<div id='item-1' className='h-screen'>
+								<HeroSection />
+							</div>
+							<div id='item-2' className='h-screen'>
+								<ExperienceSection />
+							</div>
+							<div id='item-3' className='h-screen'>
+								<HeroSection />
+							</div>
+							<div id='item-4' className='h-screen'>
+								<HeroSection />
+							</div>
+							<div id='item-5' className='h-screen'>
+								<HeroSection />
+							</div>
+							<div id='item-6' className='h-screen'>
+								<HeroSection />
+							</div>
 						</div>
 					</div>
 				</div>

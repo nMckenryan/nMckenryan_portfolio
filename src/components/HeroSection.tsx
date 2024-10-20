@@ -11,9 +11,9 @@ export default function HeroSection(): ReactElement {
 					n.Mckenryan@gmail.com
 				</a>{' '}
 			</h2>
-			<p className='text-baseline w-50'>
+			<p className='text-baseline'>
 				Web Developer, Prop Builder and Tinkerer hailing from Auckland, New
-				Zealand. Currently based in Melbourne, Victoria.
+				Zealand. <br /> Currently based in Melbourne, Victoria.
 			</p>
 		</div>
 	)
