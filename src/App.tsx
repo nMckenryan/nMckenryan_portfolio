@@ -2,6 +2,7 @@ import ExperienceSection from 'components/sections/ExperienceSection'
 import HeroSection from 'components/sections/HeroSection'
 import LoadingOrError from 'components/ui/LoadingOrError'
 import { Suspense, type ReactElement } from 'react'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import { BrowserRouter } from 'react-router-dom'
