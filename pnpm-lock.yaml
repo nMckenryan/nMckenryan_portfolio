@@ -13,6 +13,9 @@ importers:
       '@makotot/ghostui':
         specifier: ^2.0.0
         version: 2.0.0(react@18.2.0)
+      '@preline/scrollspy':
+        specifier: ^2.5.0
+        version: 2.5.0
       '@tanstack/react-query':
         specifier: 5.29.2
         version: 5.29.2(react@18.2.0)
@@ -1669,6 +1672,12 @@ packages:
         integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
       }
     engines: { node: '>=14' }
+
+  '@preline/scrollspy@2.5.0':
+    resolution:
+      {
+        integrity: sha512-sZisX6CXpUZJ2o9BdxGX5Ai4GAvytVZtRgquZmtyhIiSLIHQOCfECrGSYe8yR0JiXvzccIoKEn/bto2uQgJoYw==
+      }
 
   '@remix-run/router@1.15.3':
     resolution:
@@ -9181,6 +9190,8 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@preline/scrollspy@2.5.0': {}
 
   '@remix-run/router@1.15.3': {}
 

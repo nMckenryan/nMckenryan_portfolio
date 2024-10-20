@@ -1,7 +1,4 @@
-import { useRef, type ReactElement } from 'react'
-
-import avatar from '../../public/apple-touch-icon.png'
-import HeroSection from './Section'
+import type { ReactElement } from 'react'
 
 export default function Sidebar(): ReactElement {
 	const tabs = [
@@ -13,62 +10,23 @@ export default function Sidebar(): ReactElement {
 		{ content: 'Interests', href: 'interests' }
 	]
 
-	const sectionReferences = [
-		useRef<HTMLDivElement>(null),
-		useRef<HTMLDivElement>(null),
-		useRef<HTMLDivElement>(null),
-		useRef<HTMLDivElement>(null),
-		useRef<HTMLDivElement>(null),
-		useRef<HTMLDivElement>(null)
-	]
 	return (
-		<div
-			id='sidebar'
-			className='h-screen flex-row items-center justify-center '
-		>
-			<div
-				data-cy='nav-wrapper'
-				className='md:position-fixed fixed hidden h-full w-1/6  list-none flex-col items-center justify-center bg-blue-900 md:flex'
+		<div className='col-span-2'>
+			<h2 className='text-xl font-medium dark:text-white'>Navbar</h2>
+
+			<ul
+				className='sticky top-0'
+				data-hs-scrollspy='#scrollspy-2'
+				data-hs-scrollspy-scrollable-parent='#scrollspy-scrollable-parent-2'
 			>
-				<div>
-					<img
-						className='mx-auto mb-2 size-32 rounded-full drop-shadow-lg'
-						src={avatar}
-						alt='avatar'
-					/>
-				</div>
-				<ul>
-					{tabs.map((item, index) => (
-						<li key={item.href}>
-							<a href={`#section-${index}`} className='text-2xl font-bold'>
-								{item.content}
-							</a>
-						</li>
-					))}
-				</ul>
-			</div>
-			{/* RIGHT SIDE SECTION */}
-			<div data-cy='section-wrapper' className='flex flex-col'>
-				<HeroSection />
-				{tabs.map((_, index) => (
-					<div
-						id={`section-${index}`}
-						key='key'
-						ref={sectionReferences[index]}
-						style={{
-							display: 'flex',
-							justifyContent: 'center',
-							alignItems: 'center',
-							height: '500px',
-							backgroundColor: `#${index}${index}${index}`,
-							color: '#fff',
-							fontSize: '2rem'
-						}}
-					>
-						{index}
-					</div>
+				{tabs.map(item => (
+					<li key={item.href} data-hs-scrollspy-group=''>
+						<a href='#item-1' className='text-2xl font-bold'>
+							{item.content}
+						</a>
+					</li>
 				))}
-			</div>
+			</ul>
 		</div>
 	)
 }

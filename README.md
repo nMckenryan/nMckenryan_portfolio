@@ -9,7 +9,7 @@ Build with Vitamin: Opinionated Vite starter template.
 ## TODO
 
 - [x] Boilerplate setup w/ Vitamin
-- [ ] Identifying sections from old portfolio to keep
+- [x] Identifying sections from old portfolio to keep
 - [x] Sidebar collapses on mobile
 - [x] set up side scroller section
 - [ ] Set up test cases for basic section component
