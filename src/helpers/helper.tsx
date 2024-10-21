@@ -1,12 +1,6 @@
 import type { ReactElement } from 'react'
 import { BiLogoGoogleCloud, BiLogoPostgresql } from 'react-icons/bi'
-import {
-	FaInfoCircle,
-	FaLightbulb,
-	FaSuitcase,
-	FaUniversity,
-	FaVuejs
-} from 'react-icons/fa'
+import { FaInfoCircle, FaSuitcase, FaUniversity, FaVuejs } from 'react-icons/fa'
 import { FaScrewdriverWrench } from 'react-icons/fa6'
 import {
 	SiAirtable,
@@ -25,6 +19,7 @@ import {
 	SiTailwindcss,
 	SiTypescript,
 	SiVercel,
+	SiVite,
 	SiWordpress
 } from 'react-icons/si'
 
@@ -52,13 +47,6 @@ export interface Experience {
 	description: string[]
 }
 
-export interface Skills {
-	certificationName: string
-	institution: string
-	startDate: Date
-	endDate: Date
-}
-
 export const tabs = [
 	{
 		content: 'About',
@@ -76,13 +64,8 @@ export const tabs = [
 		logo: <FaScrewdriverWrench className='text-orange-300' />
 	},
 	{
-		content: 'Skills',
-		href: '#item-4',
-		logo: <FaLightbulb className='text-orange-300' />
-	},
-	{
 		content: 'Education',
-		href: '#item-5',
+		href: '#item-4',
 		logo: <FaUniversity className='text-orange-300' />
 	}
 ]
@@ -90,19 +73,18 @@ export const tabs = [
 export function DateSection(experience: Experience): ReactElement {
 	const { startDate, endDate, location } = experience
 
+	const startString = `${startDate.toLocaleString('default', { month: 'short' })}  ${startDate.getFullYear()}`
+	const endString = `${endDate.toLocaleString('default', { month: 'short' })}  ${endDate.getFullYear()}`
+	const period = `${startString} - ${endString}`
+
 	return (
 		<div className='flex flex-col text-left md:text-right'>
-			<h2 className='text-baseline text-orange-300 md:text-2xl'>
-				{startDate.toLocaleString('default', {
-					month: 'short'
-				})}{' '}
-				{startDate.getFullYear()} -{' '}
-				{endDate.toLocaleString('default', {
-					month: 'short'
-				})}{' '}
-				{endDate.getFullYear()}
+			<h2 className='text-nowrap text-left font-saira text-xl font-bold text-orange-300 md:text-right  md:text-3xl'>
+				{period}
 			</h2>
-			<h2 className='text-baseline hidden md:flex md:text-lg'>{location}</h2>
+			<h2 className='hidden text-right font-saira text-xl text-slate-300 md:flex md:text-2xl'>
+				{location}
+			</h2>
 		</div>
 	)
 }
@@ -182,6 +164,9 @@ export default function renderLogo(tech: string): ReactElement {
 
 		case 'Postgres': {
 			return <BiLogoPostgresql className='size-5 text-orange-300 md:size-10' />
+		}
+		case 'Vite': {
+			return <SiVite className='size-5 text-orange-300 md:size-10' />
 		}
 
 		default: {

@@ -6,8 +6,9 @@ const config = {
 	content: ['index.html', 'src/**/*.tsx'],
 	theme: {
 		fontFamily: {
-			sans: ['Inter', ...defaultConfig.theme.fontFamily.sans],
-			mono: ['SairaExtraCondensed', ...defaultConfig.theme.fontFamily.mono]
+			inter: ['Inter', ...defaultConfig.theme.fontFamily.serif],
+			sans: ['Lato', ...defaultConfig.theme.fontFamily.sans],
+			saira: ['Saira Extra Condensed', ...defaultConfig.theme.fontFamily.serif]
 		}
 	},
 	experimental: { optimizeUniversalDefaults: true },

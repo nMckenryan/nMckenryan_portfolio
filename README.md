@@ -16,12 +16,11 @@ Build with Vitamin: Opinionated Vite starter template.
 - [x] experience section
 - [x] project showcase (with company logos)
   - [ ] Add note about portfolio site
-- [ ] skills section
 - [x] GH/Linkedin Links
 - [x] Mobile responsiveness
 - [x] Tablet responsiveness
 - [x] Desktop responsiveness
-- [ ] Print to Vercel
+- [ ] Print to github pages
 - [ ] Line up SEO
 
 ## Features

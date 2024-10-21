@@ -12,15 +12,15 @@ export default function ExperienceSection(): ReactElement {
 						<div id='experience:heading' className='flex flex-row'>
 							<div className='flex w-full flex-col justify-between md:flex-row'>
 								<div className='flex flex-col'>
-									<h2 className='text-lg font-bold text-orange-300 md:text-2xl'>
+									<h2 className='font-saira text-2xl font-bold text-orange-300 md:text-3xl'>
 										{experience.title}
 									</h2>
 									<div className='flex flex-row gap-2'>
-										<h2 className='text-baseline md:text-lg'>
+										<h2 className='font-saira text-xl text-slate-300 md:text-2xl'>
 											{experience.company}
 										</h2>
-										<h2 className='text-baseline flex md:hidden md:text-lg'>
-											- {experience.location}
+										<h2 className=' flex font-saira text-xl text-slate-300 md:hidden md:text-2xl'>
+											{experience.location}
 										</h2>
 									</div>
 								</div>
@@ -29,12 +29,12 @@ export default function ExperienceSection(): ReactElement {
 						</div>
 						<div
 							id='experience:content'
-							className='mt-3 flex w-full flex-col pl-5'
+							className='mt-3 flex w-full flex-col px-5'
 						>
 							<ul className='list-disc'>
 								{experience.description.map(desc => (
 									<li
-										className='md:text-baseline w-full py-1 text-sm'
+										className='leading-1.5 w-full py-1 text-sm text-slate-300 md:text-lg'
 										key={desc}
 									>
 										{desc}

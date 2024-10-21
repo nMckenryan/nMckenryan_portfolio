@@ -1,4 +1,4 @@
-import type { Education, Experience, Project, Skills } from './helper'
+import type { Education, Experience, Project } from './helper'
 
 export const educations: Education[] = [
 	{
@@ -143,21 +143,18 @@ export const projects: Project[] = [
 		],
 		technologies: ['Vue.Js', 'Tailwind', 'Airtable', 'Wordpress'],
 		link: 'https://five-things.linktree.app'
-	}
-]
-
-export const skills: Skills[] = [
-	{
-		certificationName:
-			'Graduate Certificate of Computing and Information Sciences',
-		institution: 'Auckland University of Technology',
-		startDate: new Date('2017, 1, 1'),
-		endDate: new Date('2018, 12, 1')
 	},
 	{
-		certificationName: 'Bachelor of Communications',
-		institution: 'Auckland University of Technology',
-		startDate: new Date('2012, 1, 1'),
-		endDate: new Date('2014, 12, 1')
+		title: 'Portfolio (This Website!)',
+		client: '',
+		description: [
+			'Revamped my portfolio from the ground up, based on my previous, Gatsby based resume site',
+			'Built the baseline of the website with Vitamin, a opinionated Vite based template, using ReactJS',
+			'Ensured Mobile Responsiveness with TailwindCSS and ReactJS',
+			'Utilised Husky, Stylelint, ESLint and Prettier to ensure better code quality and security',
+			'Deployed website to Github Pages and implemented simple CI/CD pipeline'
+		],
+		technologies: ['ReactJS', 'Tailwind', 'Vite'],
+		link: ''
 	}
 ]

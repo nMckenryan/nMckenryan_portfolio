@@ -25,7 +25,7 @@ export default function ScrollerMenu(): ReactElement {
 				/>
 				{/* SCROLL MENU */}
 				<ul
-					className='sticky top-0 my-5 text-center'
+					className='sticky top-0 my-5 px-5 text-center'
 					data-hs-scrollspy='#scrollspy-2'
 					data-hs-scrollspy-scrollable-parent='#scrollspy-scrollable-parent-2'
 				>
@@ -33,7 +33,7 @@ export default function ScrollerMenu(): ReactElement {
 						<li data-hs-scrollspy-group='' key={item.href}>
 							<a
 								href={item.href}
-								className='hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-500 active block flex flex-row items-center justify-center gap-1 py-0.5 text-sm font-medium leading-6 text-gray-700 hover:text-gray-900 focus:text-blue-600 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-blue-500'
+								className='flex flex-row items-center justify-center gap-1 py-2 font-inter  text-xl font-bold leading-6 text-gray-700 hover:text-gray-900 focus:text-blue-600 focus:outline-none dark:text-neutral-300 dark:hover:text-neutral-100 dark:focus:text-blue-500'
 							>
 								{item.logo} {item.content}
 							</a>
