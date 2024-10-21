@@ -95,7 +95,7 @@ export default function ExperienceSection(): ReactElement {
 		<Section title='Experience'>
 			<>
 				{experiences.map(experience => (
-					<div className='mb-10 flex flex-col' key={experience.title}>
+					<div className='mb-10 flex w-screen flex-col' key={experience.title}>
 						<div id='experience:heading' className='flex flex-row'>
 							<div className='flex w-full flex-col justify-between md:flex-row'>
 								<div className='flex flex-col'>
