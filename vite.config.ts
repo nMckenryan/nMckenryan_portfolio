@@ -60,5 +60,5 @@ export default defineConfig(({ mode }) => ({
 					})
 				])
 	],
-	base: 'nmckenryan.github.io'
+	base: '/nmckenryan.github.io/'
 }))
