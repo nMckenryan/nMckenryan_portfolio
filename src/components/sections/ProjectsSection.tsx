@@ -46,10 +46,10 @@ function renderLogo(tech: string): ReactElement {
 
 export default function ProjectSection(): ReactElement {
 	return (
-		<Section title='Project'>
+		<Section title='Projects' scrollId='item-3'>
 			<>
 				{projects.map(project => (
-					<div className='mb-10 flex w-screen flex-col' key={project.title}>
+					<div className='mb-10 flex w-full flex-col' key={project.title}>
 						<div className='flex flex-row'>
 							<div className='flex w-full flex-row justify-between'>
 								<div className='flex flex-col'>
@@ -64,7 +64,7 @@ export default function ProjectSection(): ReactElement {
 						</div>
 						<div
 							id='project:content'
-							className='mt-3 flex w-screen flex-col pl-5'
+							className='mt-3 flex w-full flex-col pl-5'
 						>
 							<ul className='list-disc'>
 								{project.description.map((tech: string) => (

@@ -8,14 +8,11 @@ export default function App(): ReactElement {
 	return (
 		<BrowserRouter>
 			<Suspense fallback={<LoadingOrError />} />
-			<div
-				id='scrollspy-scrollable-parent-2'
-				className='h-screen overflow-y-auto '
-			>
-				<div id='side-menu' className='grid grid-cols-5'>
-					<ScrollerMenu />
-					<ScrollerContent />
-				</div>
+			<div className='w-1/5'>
+				<ScrollerMenu />
+			</div>
+			<div className='w-4/5'>
+				<ScrollerContent />
 			</div>
 		</BrowserRouter>
 	)

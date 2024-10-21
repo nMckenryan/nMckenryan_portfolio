@@ -26,11 +26,11 @@ const educations: Education[] = [
 
 export default function EducationSection(): ReactElement {
 	return (
-		<Section title='Education'>
+		<Section title='Education' scrollId='item-5'>
 			<>
 				{educations.map(education => (
 					<div
-						className='mb-10 flex w-screen flex-col'
+						className='mb-10 flex w-full flex-col'
 						key={education.certificationName}
 					>
 						<div id='education:heading' className='flex flex-row'>

@@ -26,4 +26,12 @@
 		font-display: swap;
 		src: url('/fonts/Inter-Bold.woff2') format('woff2');
 	}
+
+	@font-face {
+		font-family: SairaExtraCondensed;
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url('\fonts\SairaExtraCondensed-ExtraBold.ttf') format('ttf');
+	}
 }

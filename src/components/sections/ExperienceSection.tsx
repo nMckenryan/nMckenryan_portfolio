@@ -92,10 +92,10 @@ function DateSection(experience: Experience): ReactElement {
 
 export default function ExperienceSection(): ReactElement {
 	return (
-		<Section title='Experience'>
+		<Section title='Experience' scrollId='item-2'>
 			<>
 				{experiences.map(experience => (
-					<div className='mb-10 flex w-screen flex-col' key={experience.title}>
+					<div className='mb-10 flex w-full flex-col' key={experience.title}>
 						<div id='experience:heading' className='flex flex-row'>
 							<div className='flex w-full flex-col justify-between md:flex-row'>
 								<div className='flex flex-col'>
@@ -116,11 +116,14 @@ export default function ExperienceSection(): ReactElement {
 						</div>
 						<div
 							id='experience:content'
-							className='mt-3 flex w-screen flex-col pl-5'
+							className='mt-3 flex w-full flex-col pl-5'
 						>
 							<ul className='list-disc'>
 								{experience.description.map(desc => (
-									<li className='md:text-baseline py-1 text-sm' key={desc}>
+									<li
+										className='md:text-baseline w-full py-1 text-sm'
+										key={desc}
+									>
 										{desc}
 									</li>
 								))}

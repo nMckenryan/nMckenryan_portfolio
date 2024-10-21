@@ -13,11 +13,14 @@ Build with Vitamin: Opinionated Vite starter template.
 - [x] Sidebar collapses on mobile
 - [x] set up side scroller section
 - [ ] Set up test cases for basic section component
-- [ ] create Hero section
-- [ ] experience section
-- [ ] project showcase (with company logos)
-- [ ] skills section
-- [ ] GH/Linkedin Lins
+- [x] create Hero section
+- [x] experience section
+- [x] project showcase (with company logos)
+- [/] skills section
+- [x] GH/Linkedin Links
+- [x] Mobile responsiveness
+- [ ] Tablet responsiveness
+- [] Desktop responsiveness
 
 ## Features
 
