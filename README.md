@@ -12,15 +12,17 @@ Build with Vitamin: Opinionated Vite starter template.
 - [x] Identifying sections from old portfolio to keep
 - [x] Sidebar collapses on mobile
 - [x] set up side scroller section
-- [ ] Set up test cases for basic section component
 - [x] create Hero section
 - [x] experience section
 - [x] project showcase (with company logos)
-- [/] skills section
+  - [ ] Add note about portfolio site
+- [ ] skills section
 - [x] GH/Linkedin Links
 - [x] Mobile responsiveness
-- [ ] Tablet responsiveness
-- [] Desktop responsiveness
+- [x] Tablet responsiveness
+- [x] Desktop responsiveness
+- [ ] Print to Vercel
+- [ ] Line up SEO
 
 ## Features
 

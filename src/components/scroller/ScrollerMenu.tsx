@@ -1,42 +1,8 @@
 import type { ReactElement } from 'react'
 // eslint-disable-next-line import/no-extraneous-dependencies
-import {
-	FaGithub,
-	FaInfoCircle,
-	FaLightbulb,
-	FaLinkedin,
-	FaUniversity
-} from 'react-icons/fa'
-import { FaScrewdriverWrench, FaSuitcase } from 'react-icons/fa6'
+import { tabs } from 'helpers/helper'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import avatar from '../../../public/apple-touch-icon.png'
-
-const tabs = [
-	{
-		content: 'About',
-		href: '#item-1',
-		logo: <FaInfoCircle className='text-orange-300' />
-	},
-	{
-		content: 'Experience',
-		href: '#item-2',
-		logo: <FaSuitcase className='text-orange-300' />
-	},
-	{
-		content: 'Projects',
-		href: '#item-3',
-		logo: <FaScrewdriverWrench className='text-orange-300' />
-	},
-	{
-		content: 'Skills',
-		href: '#item-4',
-		logo: <FaLightbulb className='text-orange-300' />
-	},
-	{
-		content: 'Education',
-		href: '#item-5',
-		logo: <FaUniversity className='text-orange-300' />
-	}
-]
 
 function onLinkedinClick(): void {
 	window.open('https://www.linkedin.com/in/nmckenryan', '_blank')

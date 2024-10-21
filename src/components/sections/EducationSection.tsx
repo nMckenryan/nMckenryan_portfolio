@@ -1,28 +1,6 @@
+import { educations } from 'helpers/cvDetails'
 import type { ReactElement } from 'react'
 import Section from '../ui/Section'
-
-interface Education {
-	certificationName: string
-	institution: string
-	startDate: Date
-	endDate: Date
-}
-
-const educations: Education[] = [
-	{
-		certificationName:
-			'Graduate Certificate of Computing and Information Sciences',
-		institution: 'Auckland University of Technology',
-		startDate: new Date('2017, 1, 1'),
-		endDate: new Date('2018, 12, 1')
-	},
-	{
-		certificationName: 'Bachelor of Communications',
-		institution: 'Auckland University of Technology',
-		startDate: new Date('2012, 1, 1'),
-		endDate: new Date('2014, 12, 1')
-	}
-]
 
 export default function EducationSection(): ReactElement {
 	return (
