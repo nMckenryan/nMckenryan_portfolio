@@ -70,39 +70,59 @@ const experiences: Experience[] = [
 	}
 ]
 
+function DateSection(experience: Experience): ReactElement {
+	const { startDate, endDate, location } = experience
+
+	return (
+		<div className='flex flex-col text-left md:text-right'>
+			<h2 className='text-baseline text-orange-300 md:text-2xl'>
+				{startDate.toLocaleString('default', {
+					month: 'short'
+				})}{' '}
+				{startDate.getFullYear()} -{' '}
+				{endDate.toLocaleString('default', {
+					month: 'short'
+				})}{' '}
+				{endDate.getFullYear()}
+			</h2>
+			<h2 className='text-baseline hidden md:flex md:text-lg'>{location}</h2>
+		</div>
+	)
+}
+
 export default function ExperienceSection(): ReactElement {
 	return (
 		<Section title='Experience'>
 			<>
 				{experiences.map(experience => (
 					<div className='mb-10 flex flex-col' key={experience.title}>
-						<div className='flex flex-row'>
-							<div className='flex w-full flex-row justify-between'>
+						<div id='experience:heading' className='flex flex-row'>
+							<div className='flex w-full flex-col justify-between md:flex-row'>
 								<div className='flex flex-col'>
-									<h2 className='text-2xl text-orange-300'>
+									<h2 className='text-lg font-bold text-orange-300 md:text-2xl'>
 										{experience.title}
 									</h2>
-									<h2 className='text-lg '>{experience.company}</h2>
+									<div className='flex flex-row gap-2'>
+										<h2 className='text-baseline md:text-lg'>
+											{experience.company}
+										</h2>
+										<h2 className='text-baseline flex md:hidden md:text-lg'>
+											- {experience.location}
+										</h2>
+									</div>
 								</div>
-								<div className='flex flex-col text-right'>
-									<h2 className='text-2xl text-orange-300'>
-										{experience.startDate.toLocaleString('default', {
-											month: 'short'
-										})}{' '}
-										{experience.startDate.getFullYear()} -{' '}
-										{experience.endDate.toLocaleString('default', {
-											month: 'short'
-										})}{' '}
-										{experience.endDate.getFullYear()}
-									</h2>
-									<h2 className='text-lg'>{experience.location}</h2>
-								</div>
+								{DateSection(experience)}
 							</div>
 						</div>
-						<div className='mt-3 flex flex-col pl-5'>
+						<div
+							id='experience:content'
+							className='mt-3 flex w-screen flex-col pl-5'
+						>
 							<ul className='list-disc'>
 								{experience.description.map(desc => (
-									<li key={desc}>{desc}</li>
+									<li className='md:text-baseline py-1 text-sm' key={desc}>
+										{desc}
+									</li>
 								))}
 							</ul>
 						</div>

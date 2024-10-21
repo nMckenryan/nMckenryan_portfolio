@@ -5,21 +5,21 @@ import ContentSection from './sections/ProjectsSection'
 
 export default function Content(): ReactElement {
 	return (
-		<div id='scrollspy-content' className='col-span-3 ml-[10rem]'>
-			<div id='scrollspy-2' className='h-screen w-[800px] space-y-4'>
-				<div id='item-1' className='h-screen'>
+		<div id='scrollspy-content' className='col-span-3 ml-0 md:ml-[10rem]'>
+			<div id='scrollspy-2' className=' w-[800px] space-y-4'>
+				<div id='item-1'>
 					<HeroSection />
 				</div>
-				<div id='item-2' className='h-screen'>
+				<div id='item-2'>
 					<ExperienceSection />
 				</div>
-				<div id='item-3' className='h-screen'>
+				<div id='item-3'>
 					<ContentSection />
 				</div>
-				<div id='item-4' className='h-screen'>
+				<div id='item-4'>
 					<HeroSection />
 				</div>
-				<div id='item-5' className='h-screen'>
+				<div id='item-5'>
 					<HeroSection />
 				</div>
 			</div>

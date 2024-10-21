@@ -22,7 +22,7 @@ export default function ScrollerMenu(): ReactElement {
 	return (
 		<div
 			id='scrollspy-menu'
-			className='fixed col-span-2 h-screen items-center justify-center bg-slate-700'
+			className='fixed col-span-2 hidden h-screen items-center justify-center bg-slate-700 md:flex'
 		>
 			<div className='my-auto flex flex-col items-center'>
 				<img

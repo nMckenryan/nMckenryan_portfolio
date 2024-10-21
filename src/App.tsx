@@ -7,7 +7,6 @@ export default function App(): ReactElement {
 	return (
 		<BrowserRouter>
 			<Suspense fallback={<LoadingOrError />} />
-
 			<Scroller />
 		</BrowserRouter>
 	)
