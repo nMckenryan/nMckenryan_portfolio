@@ -25,6 +25,12 @@ export default defineConfig(({ mode }) => ({
 			reportsDirectory: 'coverage'
 		}
 	},
+	build: {
+		commonjsOptions: {
+			transformMixedEsModules: true
+			// include: [/linked-dep/, /node_modules/],
+		}
+	},
 	plugins: [
 		tsconfigPaths(),
 		react(),
