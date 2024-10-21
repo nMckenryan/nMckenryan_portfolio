@@ -1,8 +1,9 @@
 {
-	"name": "nMckenryan_Portfolio",
+	"name": "nmckenryan.github.io",
 	"license": "MIT",
-	"private": true,
-	"version": "0.0.0",
+	"private": false,
+	"version": "1.0.0",
+	"homepage": "https://nmckenryan.github.io/",
 	"scripts": {
 		"build": "vite build",
 		"commit": "cz",
