@@ -4,7 +4,7 @@ import Section from '../ui/Section'
 
 export default function EducationSection(): ReactElement {
 	return (
-		<Section title='Education' scrollId='item-4'>
+		<Section title='Education' scrollId='education'>
 			<>
 				{educations.map(education => (
 					<div

@@ -6,7 +6,7 @@ import Section from '../ui/Section'
 
 export default function ProjectSection(): ReactElement {
 	return (
-		<Section title='Projects' scrollId='item-3'>
+		<Section title='Projects' scrollId='projects'>
 			<>
 				{projects.map(project => (
 					<div className='mb-10 flex w-full flex-col' key={project.title}>
