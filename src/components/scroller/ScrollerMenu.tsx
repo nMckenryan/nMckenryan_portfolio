@@ -21,7 +21,7 @@ export default function ScrollerMenu(): ReactElement {
 				<img
 					className='m-4 mx-auto size-32 rounded-full p-1 drop-shadow-lg'
 					src={avatar}
-					alt='avatar'
+					alt='nMckenryan avatar'
 				/>
 				{/* SCROLL MENU */}
 				<ul
