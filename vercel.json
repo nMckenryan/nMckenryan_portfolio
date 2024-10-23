@@ -1,21 +1,12 @@
 {
 	"version": 2,
-	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
 	"routes": [
 		{
-			"src": "/",
-			"dest": "/index.html"
-		}
-	],
-	"headers": [
-		{
-			"source": "/",
-			"headers": [
-				{
-					"key": "X-Robots-Tag",
-					"value": "index, follow"
-				}
-			]
+			"src": "/(.*)",
+			"dest": "/index.html",
+			"headers": {
+				"X-Robots-Tag": "index, follow"
+			}
 		}
 	]
 }
