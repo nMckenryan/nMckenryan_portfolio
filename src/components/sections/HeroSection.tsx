@@ -9,7 +9,7 @@ export default function HeroSection(): ReactElement {
 				<div className='m-1 flex w-full md:hidden'>
 					<img
 						src={avatar}
-						alt='avatar'
+						alt='nMckenryan avatar'
 						className='size-32 rounded-full drop-shadow-lg'
 					/>
 				</div>
