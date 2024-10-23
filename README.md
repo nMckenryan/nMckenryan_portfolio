@@ -21,7 +21,7 @@ Build with Vitamin: Opinionated Vite starter template.
 - [x] Tablet responsiveness
 - [x] Desktop responsiveness
 - [ ] Print to github pages
-- [ ] Line up SEO
+- [/] Line up SEO
 
 ## Features
 
