@@ -4,7 +4,7 @@ import avatar from '../../../public/apple-touch-icon.png'
 
 export default function HeroSection(): ReactElement {
 	return (
-		<Section title='' scrollId='item-1'>
+		<Section title='' scrollId='about'>
 			<>
 				<div className='m-1 flex w-full md:hidden'>
 					<img

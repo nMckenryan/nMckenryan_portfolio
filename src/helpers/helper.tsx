@@ -50,22 +50,22 @@ export interface Experience {
 export const tabs = [
 	{
 		content: 'About',
-		href: '#item-1',
+		href: '#about',
 		logo: <FaInfoCircle className='text-orange-300' />
 	},
 	{
 		content: 'Experience',
-		href: '#item-2',
+		href: '#experience',
 		logo: <FaSuitcase className='text-orange-300' />
 	},
 	{
 		content: 'Projects',
-		href: '#item-3',
+		href: '#projects',
 		logo: <FaScrewdriverWrench className='text-orange-300' />
 	},
 	{
 		content: 'Education',
-		href: '#item-4',
+		href: '#education',
 		logo: <FaUniversity className='text-orange-300' />
 	}
 ]

@@ -5,7 +5,7 @@ import Section from '../ui/Section'
 
 export default function ExperienceSection(): ReactElement {
 	return (
-		<Section title='Experience' scrollId='item-2'>
+		<Section title='Experience' scrollId='experience'>
 			<>
 				{experiences.map(experience => (
 					<div className='mb-10 flex w-full flex-col' key={experience.title}>
